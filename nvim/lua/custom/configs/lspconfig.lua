@@ -11,3 +11,18 @@ for _, lsp in ipairs(servers) do
         capabilities = capabilities,
     }
 end
+
+-- Servers that require a custom setup
+require("lspconfig").gopls.setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
+    settings = {
+        gopls = {
+            completeUnimported = true,
+            usePlaceholders = true,
+            analyses = {
+                unusedparams = true,
+            },
+        },
+    },
+}
