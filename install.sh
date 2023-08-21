@@ -6,7 +6,7 @@ echo "And install the new configuration"
 echo "Are you sure? [y/N]: "
 
 read -r choice
-if [[ $choice != "y" ]]; then
+if [[ $choice != "y" && $choice != "Y" ]]; then
     exit 1
 fi
 
