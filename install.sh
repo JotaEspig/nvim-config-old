@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "This script will delete:"
 echo " - ~/.config/nvim/*"
 echo " - ~/.local/share/nvim/*"
